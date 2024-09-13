@@ -247,3 +247,82 @@ You would record the Opening Balance as 2000.00.
   - Outflows: 6600.00
   - **Net Cash Flow:** 2500.00
 
+----
+
+Ledgers for JohnDoe based on the provided transactions
+
+### 1. **General Ledger for JohnDoe**
+
+| Date       | TransactionID | Description              | AccountID | Debit  | Credit | Balance  |
+|------------|---------------|--------------------------|-----------|--------|--------|----------|
+| 2024-01-10 | txn001        | Sale of Product           | acc001    |        | 5000.00 | 5000.00  |
+| 2024-01-12 | txn002        | Office Supplies Purchase  | acc001    | 150.00 |        | 4850.00  |
+| 2024-01-15 | txn003        | Rent Payment              | acc002    | 1000.00|        | 3850.00  |
+| 2024-01-20 | txn004        | Marketing Expense         | acc005    | 500.00 |        | 3350.00  |
+| 2024-01-25 | txn005        | Consulting Fees           | acc003    |        | 2000.00 | 5350.00  |
+| 2024-03-12 | txn016        | Travel Expense            | acc006    | 250.00 |        | 5100.00  |
+| 2024-03-15 | txn017        | Savings Deposit           | acc005    |        | 2000.00 | 7100.00  |
+
+---
+
+### 2. **Sales Ledger (Revenue) for JohnDoe**
+
+| Date       | TransactionID | Description        | Amount  | Balance  |
+|------------|---------------|--------------------|---------|----------|
+| 2024-01-10 | txn001        | Sale of Product     | 5000.00 | 5000.00  |
+| 2024-01-25 | txn005        | Consulting Fees     | 2000.00 | 7000.00  |
+| 2024-03-15 | txn017        | Savings Deposit     | 2000.00 | 9000.00  |
+
+---
+
+### 3. **Purchase Ledger (Expense) for JohnDoe**
+
+| Date       | TransactionID | Description               | Amount  | Balance  |
+|------------|---------------|---------------------------|---------|----------|
+| 2024-01-12 | txn002        | Office Supplies Purchase   | 150.00  | 150.00   |
+| 2024-01-15 | txn003        | Rent Payment               | 1000.00 | 1150.00  |
+| 2024-01-20 | txn004        | Marketing Expense          | 500.00  | 1650.00  |
+| 2024-03-12 | txn016        | Travel Expense             | 250.00  | 1900.00  |
+
+---
+
+### 4. **Cash Ledger for JohnDoe**
+
+| Date       | TransactionID | Description        | AccountID | Debit  | Credit | Balance  |
+|------------|---------------|--------------------|-----------|--------|--------|----------|
+| 2024-01-10 | txn001        | Sale of Product     | acc001    |        | 5000.00 | 5000.00  |
+| 2024-01-12 | txn002        | Office Supplies     | acc001    | 150.00 |        | 4850.00  |
+| 2024-01-25 | txn005        | Consulting Fees     | acc003    |        | 2000.00 | 6850.00  |
+| 2024-03-12 | txn016        | Travel Expense      | acc006    | 250.00 |        | 6600.00  |
+
+---
+
+### 5. **Bank Ledger for JohnDoe**
+
+| Date       | TransactionID | Description        | AccountID | Debit  | Credit | Balance  |
+|------------|---------------|--------------------|-----------|--------|--------|----------|
+| 2024-01-15 | txn003        | Rent Payment        | acc002    | 1000.00|        | -1000.00 |
+| 2024-01-20 | txn004        | Marketing Expense   | acc005    | 500.00 |        | -500.00  |
+| 2024-03-15 | txn017        | Savings Deposit     | acc005    |        | 2000.00 | 1500.00  |
+
+---
+
+### 6. **Expense Ledger for JohnDoe**
+
+| Date       | TransactionID | Expense Type               | Amount  | Balance  |
+|------------|---------------|----------------------------|---------|----------|
+| 2024-01-12 | txn002        | Office Supplies Purchase    | 150.00  | 150.00   |
+| 2024-01-15 | txn003        | Rent Payment                | 1000.00 | 1150.00  |
+| 2024-01-20 | txn004        | Marketing Expense           | 500.00  | 1650.00  |
+| 2024-03-12 | txn016        | Travel Expense              | 250.00  | 1900.00  |
+
+---
+
+### 7. **Revenue Ledger for JohnDoe**
+
+| Date       | TransactionID | Revenue Source   | Amount  | Balance  |
+|------------|---------------|------------------|---------|----------|
+| 2024-01-10 | txn001        | Sale of Product  | 5000.00 | 5000.00  |
+| 2024-01-25 | txn005        | Consulting Fees  | 2000.00 | 7000.00  |
+| 2024-03-15 | txn017        | Savings Deposit  | 2000.00 | 9000.00  |
+

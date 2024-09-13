@@ -133,5 +133,117 @@ You would record the Opening Balance as 2000.00.
 ----
 
 
+### Income Statement
 
+#### JohnDoe:
+- **Revenue:**
+  - Sale of Product: 5000.00
+  - Consulting Fees: 2000.00
+  - Savings Deposit: 2000.00
+
+- **Expenses:**
+  - Office Supplies Purchase: 150.00
+  - Rent Payment: 1000.00
+  - Marketing Expense: 500.00
+  - Travel Expense: 250.00
+
+- **Net Income:**
+  - Revenue: 9000.00
+  - Expenses: 1900.00
+  - **Net Income:** 7100.00
+
+---
+
+#### JaneSmith:
+- **Revenue:**
+  - Interest Income: 500.00
+
+- **Expenses:**
+  - Business Travel: 800.00
+  - Insurance Premium: 1200.00
+  - Legal Services: 3000.00
+  - Employee Salaries: 4000.00
+  - IT Services Payment: 1200.00
+
+- **Net Income:**
+  - Revenue: 500.00
+  - Expenses: 10200.00
+  - **Net Loss:** -9700.00
+
+---
+
+#### AlexBrown:
+- **Revenue:**
+  - Product Sales Revenue: 7000.00
+  - Royalties Received: 600.00
+  - Dividend Income: 1500.00
+
+- **Expenses:**
+  - Equipment Purchase: 4500.00
+  - Cash Withdrawal: 300.00
+  - Loan Repayment: 1000.00
+  - Advertising Expense: 800.00
+
+- **Net Income:**
+  - Revenue: 9100.00
+  - Expenses: 6600.00
+  - **Net Income:** 2500.00
+
+---
+
+### Cash Flow Statement 
+
+#### JohnDoe:
+- **Cash Inflows:**
+  - Sale of Product: 5000.00
+  - Consulting Fees: 2000.00
+  - Savings Deposit: 2000.00
+
+- **Cash Outflows:**
+  - Office Supplies Purchase: 150.00
+  - Rent Payment: 1000.00
+  - Marketing Expense: 500.00
+  - Travel Expense: 250.00
+
+- **Net Cash Flow:**
+  - Inflows: 9000.00
+  - Outflows: 1900.00
+  - **Net Cash Flow:** 7100.00
+
+---
+
+#### JaneSmith:
+- **Cash Inflows:**
+  - Interest Income: 500.00
+
+- **Cash Outflows:**
+  - Business Travel: 800.00
+  - Insurance Premium: 1200.00
+  - Legal Services: 3000.00
+  - Employee Salaries: 4000.00
+  - IT Services Payment: 1200.00
+
+- **Net Cash Flow:**
+  - Inflows: 500.00
+  - Outflows: 10200.00
+  - **Net Cash Flow:** -9700.00
+
+---
+
+#### AlexBrown:
+- **Cash Inflows:**
+  - Product Sales Revenue: 7000.00
+  - Royalties Received: 600.00
+  - Dividend Income: 1500.00
+
+- **Cash Outflows:**
+  - Equipment Purchase: 4500.00
+  - Cash Withdrawal: 300.00
+  - Loan Repayment: 1000.00
+  - Advertising Expense: 800.00
+
+- **Net Cash Flow:**
+  - Inflows: 9100.00
+  - Outflows: 6600.00
+  - **Net Cash Flow:** 2500.00
 

@@ -1,67 +1,122 @@
 
-### JohnDoe's Financial Categories
+### 1. **Categories**
 
-| **CategoryID** | **Category** | **Subcategory**       | **Type** |
-| -------------- | ------------ | --------------------- | -------- |
-| cat001          | Revenue       | Sales                 | Income   |
-| cat002          | Revenue       | Service Income        | Income   |
-| cat003          | Expense       | Office Supplies       | Expense  |
-| cat004          | Expense       | Rent                  | Expense  |
-| cat005          | Expense       | Utilities             | Expense  |
-| cat006          | Revenue       | Product Sales         | Income   |
-| cat007          | Expense       | Marketing             | Expense  |
-| cat008          | Revenue       | Consulting Fees       | Income   |
-| cat009          | Assets        | Cash and Cash Equivalents | Asset   |
-| cat010          | Assets        | Accounts Receivable   | Asset    |
-| cat011          | Assets        | Inventory             | Asset    |
-| cat012          | Assets        | Property, Plant, and Equipment | Asset |
-| cat013          | Liabilities    | Accounts Payable      | Liability |
-| cat014          | Liabilities    | Short-Term Loans      | Liability |
-| cat015          | Liabilities    | Long-Term Loans       | Liability |
-| cat016          | Liabilities    | Accrued Expenses      | Liability |
-| cat017          | Equity         | Owner’s Capital       | Equity   |
-| cat018          | Equity         | Retained Earnings     | Equity   |
-| cat019          | Equity         | Dividends             | Equity   |
-| cat020          | Other Income   | Gains                 | Income   |
-| cat021          | Other Income   | Interest Income       | Income   |
-| cat022          | Other Expenses | Losses                | Expense  |
-| cat023          | Other Expenses | Amortization          | Expense  |
+| **CategoryID** | **Category**         | **Subcategory**            | **Type** |
+| -------------- | --------------------- | -------------------------- | -------- |
+| cat001          | Revenue               | Sales                      | Income   |
+| cat002          | Revenue               | Service Income             | Income   |
+| cat003          | Expense               | Office Supplies            | Expense  |
+| cat004          | Expense               | Rent                      | Expense  |
+| cat005          | Expense               | Utilities                  | Expense  |
+| cat006          | Revenue               | Product Sales              | Income   |
+| cat007          | Expense               | Marketing                  | Expense  |
+| cat008          | Revenue               | Consulting Fees            | Income   |
+| cat009          | COGS                  | Direct Materials           | Expense  |
+| cat010          | COGS                  | Direct Labor               | Expense  |
+| cat011          | COGS                  | Manufacturing Overhead     | Expense  |
+| cat012          | Asset                 | Equipment                  | Asset    |
+| cat013          | Liability             | Accounts Payable           | Liability|
+| cat014          | Liability             | Short-Term Loans           | Liability|
+| cat015          | Equity                | Owner's Capital            | Equity   |
+| cat016          | Equity                | Retained Earnings          | Equity   |
 
-----
+### 2. **Accounts**
 
-### JohnDoe's Income Statement
+| **AccountID** | **AccountName**     | **Type**    |
+| ------------- | ------------------- | ----------- |
+| acc001        | Cash                | Asset       |
+| acc002        | Accounts Payable    | Liability   |
+| acc003        | Bank Account        | Asset       |
+| acc004        | Loan Account        | Liability   |
+| acc005        | Owner's Equity      | Equity      |
+
+### 3. **Transactions**
+
+| **UserID** | **TransactionID** | **Date**    | **Description**                  | **CategoryID** | **Amount** | **AccountID** | **TransactionType** | **Notes**                      |
+| ---------- | ------------------ | ----------- | -------------------------------- | -------------- | ---------- | ------------- | -------------------- | --------------------------------|
+| JohnDoe    | txn001             | 2024-01-05  | Sale of Product A                | cat001         | 5,000.00   | acc001        | Credit               | Revenue from product sales     |
+| JohnDoe    | txn002             | 2024-01-10  | Service Income                   | cat002         | 2,000.00   | acc001        | Credit               | Income from consulting services|
+| JohnDoe    | txn003             | 2024-01-15  | Office Supplies Purchase         | cat003         | 150.00     | acc003        | Debit                | Office supplies expense        |
+| JohnDoe    | txn004             | 2024-02-01  | Rent Payment                     | cat004         | 1,000.00   | acc003        | Debit                | Monthly office rent            |
+| JohnDoe    | txn005             | 2024-02-10  | Utility Bill                     | cat005         | 200.00     | acc003        | Debit                | Utilities expense              |
+| JohnDoe    | txn006             | 2024-03-01  | Purchase of Raw Materials        | cat009         | 3,000.00   | acc003        | Debit                | Raw materials for production   |
+| JohnDoe    | txn007             | 2024-03-05  | Wages for Production Workers     | cat010         | 1,500.00   | acc003        | Debit                | Labor cost                     |
+| JohnDoe    | txn008             | 2024-03-10  | Factory Utilities                | cat011         | 500.00     | acc003        | Debit                | Manufacturing overhead         |
+| JohnDoe    | txn009             | 2024-03-15  | Payment to Supplier              | cat013         | 2,000.00   | acc003        | Debit                | Accounts payable               |
+| JohnDoe    | txn010             | 2024-03-20  | Short-Term Loan Received         | cat014         | 4,000.00   | acc004        | Credit               | Loan received                  |
+| JohnDoe    | txn011             | 2024-04-01  | Owner's Capital Investment       | cat015         | 5,000.00   | acc005        | Credit               | Owner's equity                 |
+| JohnDoe    | txn012             | 2024-04-15  | Retained Earnings Transfer       | cat016         | 2,000.00   | acc005        | Credit               | Retained earnings adjustment   |
+
+### 4. **Income Statement**
 
 **For the Period: January 1, 2024 – December 31, 2024**
 
 | **Revenue**                     |                          |  
 | -------------------------------- | ------------------------ |  
-| Sales Revenue                    | $50,000                  |  
-| Service Income                   | $15,000                  |  
-| Product Sales                    | $20,000                  |  
-| Consulting Fees                  | $10,000                  |  
-| **Total Revenue**                | **$95,000**              |
+| Sales of Product A               | $5,000                   |  
+| Service Income                  | $2,000                   |  
+| **Total Revenue**               | **$7,000**              |
 
 ---
 
-| **Expenses**                     |                          |  
+| **COGS**                        |                          |  
 | -------------------------------- | ------------------------ |  
-| Cost of Goods Sold (COGS)         | $25,000                  |  
-| Salaries & Wages                 | $12,000                  |  
-| Rent                             | $6,000                   |  
-| Utilities                        | $2,500                   |  
-| Marketing Expenses               | $4,000                   |  
-| Depreciation Expense             | $2,000                   |  
-| Other Expenses                   | $1,500                   |  
-| Losses                            | $500                    |  
-| Amortization                     | $1,000                   |  
-| **Total Expenses**               | **$54,500**              |
+| Purchase of Raw Materials        | $3,000                   |  
+| Wages for Production Workers     | $1,500                   |  
+| Factory Utilities                | $500                     |  
+| **Total COGS**                   | **$5,000**              |
 
 ---
 
-| **Net Income**                   |                          |  
-| **Total Revenue - Total Expenses** | **$40,500**            |
+| **Gross Profit**                |                          |  
+| **Total Revenue - Total COGS**   | **$2,000**              |
 
-This income statement reflects the income and expenses categorized into various types, providing a detailed view of JohnDoe's financial performance.
+---
+
+| **Expenses**                    |                          |  
+| -------------------------------- | ------------------------ |  
+| Office Supplies Purchase         | $150                     |  
+| Rent Payment                    | $1,000                   |  
+| Utility Bill                    | $200                     |  
+| **Total Expenses**              | **$1,350**              |
+
+---
+
+| **Net Income**                  |                          |  
+| **Gross Profit - Total Expenses**| **$650**               |
+
+### 5. **Balance Sheet**
+
+**As of December 31, 2024**
+
+| **Assets**                      |                          |  
+| -------------------------------- | ------------------------ |  
+| Cash                            | $5,000                   |  
+| Bank Account                    | $4,000                   |  
+| Equipment                       | $2,500                   |  
+| **Total Assets**                | **$11,500**             |
+
+---
+
+| **Liabilities**                 |                          |  
+| -------------------------------- | ------------------------ |  
+| Accounts Payable                | $2,000                   |  
+| Short-Term Loans                | $4,000                   |  
+| **Total Liabilities**           | **$6,000**              |
+
+---
+
+| **Equity**                      |                          |  
+| -------------------------------- | ------------------------ |  
+| Owner's Capital                 | $5,000                   |  
+| Retained Earnings               | $2,000                   |  
+| **Total Equity**                | **$7,000**              |
+
+---
+
+| **Total Liabilities & Equity**  | **$13,000**             |
+
+This data provides a complete overview for JohnDoe, including categories, transactions, an income statement, and a balance sheet.
 
 ----
 The income statement focuses on income and expenses. It does not include assets, liabilities, or equity. Here’s a quick breakdown of where each category fits in financial statements:

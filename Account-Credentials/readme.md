@@ -41,3 +41,9 @@ List of demo accounts for each business type with clear identifiers:
 - **Email**: alice@soleprop.com
 - **Phone**: +1-555-7000
 - **Password**: SoleProp123
+
+### 8. **General User**
+- **Name**: Jane Smith
+- **Email**: janesmith@business.com
+- **Phone**: +1-555-8000
+- **Password**: GeneralUser

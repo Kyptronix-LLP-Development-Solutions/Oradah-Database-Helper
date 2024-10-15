@@ -150,3 +150,110 @@ Financial statement (Income Statement, Balance Sheet, Cash Flow Statement, and P
 | **Net Income**                     | **(7,000)**     |
 
 ---
+To map the categories and subcategories you provided to the cash flow statement format, you'll need to classify each category based on whether it affects operating, investing, or financing activities.
+
+### **Cash Flows from Operating Activities**
+These activities are related to the core operations of the business, including revenue, expenses, and working capital adjustments.
+
+1. **Net Income**:
+   - This is calculated from the **Revenue** and **Expense** categories. It includes categories like:
+     - **Sale of Goods**
+     - **Service Revenue**
+     - **Other Revenues**
+     - **Cost of Goods Sold** and **Direct Costs**
+     - **Expenses** like advertising, wages, rent, utilities, etc.
+
+2. **Adjustments for Non-Cash Items**:
+   - **Depreciation**:
+     - Derived from the **Depreciation** category.
+     - **Amortization** (for intangible assets) is included here too.
+   
+   - **Bad Debt Expense**:
+     - Comes from the **Bad Debt Expense** category under **Expense**.
+
+3. **Change in Working Capital**:
+   - **Accounts Receivable**: 
+     - Difference in the **Accounts Receivable** balance (a **Current Asset**).
+   - **Accounts Payable**: 
+     - Difference in the **Accounts Payable** balance (a **Current Liability**).
+   - **Prepaid Expenses**: 
+     - Difference in **Prepaid Expenses** balance (a **Current Asset**).
+
+### **Cash Flows from Investing Activities**
+These include purchases and sales of long-term assets (like fixed assets) and investments.
+
+1. **Purchase of Fixed Assets**:
+   - This comes from categories like:
+     - **Office Equipment**
+     - **Computer Equipment**
+     - **Furniture and Fixtures**
+     - **Machinery and Equipment**
+     - **Vehicles**
+     - **Leasehold Improvements**
+     - **Buildings**
+     - **Land**
+
+2. **Sale of Fixed Assets**:
+   - When selling any of the **Fixed Assets** listed above, this would be recorded here.
+
+3. **Other Investments**:
+   - Includes **Other Loans Receivable** and **Other Investments** under **Non-Current Asset**.
+
+### **Cash Flows from Financing Activities**
+These are related to transactions with the owners or creditors (e.g., loans, owner draws).
+
+1. **Owner's Draws**:
+   - This comes from the **Owner's Draws** category under **Equity**.
+
+2. **Loans Payable**:
+   - Includes categories like:
+     - **Loans Payable** (both current and non-current).
+     - **Unsecured Loan (Current)** and **Secured Loan (Current)** (under **Current Liability**).
+     - **Loans From Owner (Noncurrent)** and **Other Long Term Liabilities** (under **Non-Current Liability**).
+
+### **Detailed Mapping Example:**
+
+1. **Operating Activities**:
+   - **Revenue** (Sales, Service Income) → Part of Net Income
+   - **Expenses** (Utilities, Rent, Wages) → Part of Net Income
+   - **Accounts Receivable** → Change in Working Capital
+   - **Accounts Payable** → Change in Working Capital
+   - **Prepaid Expenses** → Change in Working Capital
+   - **Depreciation** → Non-Cash Item Adjustment
+   - **Bad Debt Expense** → Non-Cash Item Adjustment
+
+2. **Investing Activities**:
+   - **Purchase of Fixed Assets** → Decrease in Cash (under Investing)
+   - **Sale of Fixed Assets** → Increase in Cash (under Investing)
+
+3. **Financing Activities**:
+   - **Owner’s Draws** → Decrease in Cash (under Financing)
+   - **Loans Payable** → Increase in Cash (under Financing)
+
+### **Mapping Example for Your Cash Flow Statement**:
+
+| Category/Activity                     | Amount ($) | Mapping Details |
+|---------------------------------------|------------|-----------------|
+| **Cash Flows from Operating Activities** |            |                 |
+| Net Income                            | 500        | Revenue - Expenses |
+| Depreciation                          | 5,000      | Depreciation (Non-cash) |
+| Bad Debt Expense                      | 1,500      | Bad Debt Expense (Non-cash) |
+| **Change in Working Capital**:        |            |                 |
+| - Accounts Receivable                 | (5,000)    | Change in Accounts Receivable |
+| - Accounts Payable                    | 4,000      | Change in Accounts Payable |
+| - Prepaid Expenses                    | (1,000)    | Change in Prepaid Expenses |
+| **Net Cash from Operating Activities** | 5,000      | Operating activities total |
+| **Cash Flows from Investing Activities** |            |                 |
+| Purchase of Fixed Assets              | (8,000)    | Purchase of assets like Machinery, Equipment |
+| Sale of Fixed Assets                  | 3,000      | Sale of assets like Vehicles, Equipment |
+| **Net Cash from Investing Activities** | (5,000)    | Investing activities total |
+| **Cash Flows from Financing Activities** |            |                 |
+| Owner’s Draws                         | (2,000)    | Owner’s Draws |
+| Loans Payable                         | 10,000     | New loans or debt |
+| **Net Cash from Financing Activities** | 8,000      | Financing activities total |
+| **Net Increase in Cash**              | 8,000      | Overall increase in cash |
+
+### Summary:
+- **Operating activities** include revenue, expenses, depreciation, changes in working capital like receivables and payables.
+- **Investing activities** include buying or selling fixed assets.
+- **Financing activities** involve owner withdrawals and loan management.

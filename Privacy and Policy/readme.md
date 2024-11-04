@@ -2,7 +2,7 @@
 
 Effective Date: November 04, 2024
 
-Your privacy is important to us. This Privacy Policy outlines how Kyptronix LLP ("we," "us," or "our") collects, uses, and protects your personal information when you use our mobile application Oradah (the "App").
+Your privacy is important to us. This Privacy Policy outlines how Oradah Inc ("we," "us," or "our") collects, uses, and protects your personal information when you use our mobile application Oradah (the "App").
 
 **1. Information We Collect**
 

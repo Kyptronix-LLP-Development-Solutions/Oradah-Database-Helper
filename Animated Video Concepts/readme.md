@@ -1,6 +1,6 @@
 # Animated Video Title along with Scripts
 ----
-## What is Bookkeeping? - Introduction to the concept of bookkeeping and its importance for businesses.
+## Day 1. What is Bookkeeping? - Introduction to the concept of bookkeeping and its importance for businesses.
 
 ### **Script for "What is Bookkeeping?" – 1-Minute Animated Video**
 

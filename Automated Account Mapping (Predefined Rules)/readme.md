@@ -94,4 +94,15 @@
 
 ---
 
+
+
+Exceptions
+
+Disposal of Fixed Assets at a Gain
+Disposal of Fixed Assets at a Loss
+Disposal of Fully Depreciated Assets
+Disposal of Asset with Trade-in
+Sale of Asset with Partial Payment or Financing
+Disposal of Intangible Assets (e.g., Patents, Goodwill)
+
 These mappings and examples ensure that your system can automatically categorize and record transactions based on predefined rules, simplifying accounting for non-accounting users.

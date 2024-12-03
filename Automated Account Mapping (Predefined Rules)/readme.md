@@ -105,4 +105,7 @@ Disposal of Asset with Trade-in
 Sale of Asset with Partial Payment or Financing
 Disposal of Intangible Assets (e.g., Patents, Goodwill)
 
+---------
+Fixed Asset bought and depreciated for 2 years and then sold
+
 These mappings and examples ensure that your system can automatically categorize and record transactions based on predefined rules, simplifying accounting for non-accounting users.

@@ -38,9 +38,7 @@
 #### **Operating Activities:**
 1. **Net Income**:  
    Derived from the Income Statement:  
-   \[
-   \text{Net Income} = (\text{Revenue (4000, 4100, 4200)} - \text{Returns (4300)}) - (\text{Direct Costs (5000, 5100, 5200, 5300, 5900)}) - (\text{Expenses (6000–6410)})
-   \]  
+   Net Income=(Revenue (4000, 4100, 4200)−Returns (4300))−(Direct Costs (5000, 5100, 5200, 5300, 5900))−(Expenses (6000–6410))  
 
 2. **Adjustments for Non-Cash Items**:  
    - **Depreciation (6100)**: Added back because it’s a non-cash expense.  

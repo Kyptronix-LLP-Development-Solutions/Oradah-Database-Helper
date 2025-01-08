@@ -48,3 +48,24 @@ For the Year Ended December 31, 2024
 - Dividends are accounted for when actually paid, not when declared.
 
 This equity statement format is simple and directly reflects cash flows, as per cash accounting principles.
+
+
+
+---- ----
+
+
+| **Particulars**                          | **Code** | **Amount ($)** |
+|------------------------------------------|----------|----------------|
+| Opening Balance of Equity                | 3100     | 50,000         |
+| Add: Paid Contributions                  | 3200     | 10,000         |
+| Add: Additional Paid Contributions       | 3200     | 5,000          |
+| Add: Cash Transactions                   |          |                |
+| - Cash Sales                             | 4000     | 120,000        |
+| - Cash Received from Loans               | 2200     | 30,000         |
+| Less: Cash Payments                      |          |                |
+| - Cash Expenses (Operational)            | 6000     | (45,000)       |
+| - Cash Loan Repayment                    | 2200     | (20,000)       |
+| Net Cash Income                          |          | 85,000         |
+| Less: Dividends Paid                     | 3200     | (10,000)       |
+| Less: Owner Withdrawal                   | 3200     | (15,000)       |
+| **Closing Balance of Equity**            | 3100     | **125,000**    |

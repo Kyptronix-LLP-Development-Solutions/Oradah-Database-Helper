@@ -62,10 +62,10 @@ This equity statement format is simple and directly reflects cash flows, as per 
 | Add: Additional Paid Contributions       | 3100                 | 5,000          |
 | Add: Cash Transactions                   |                      |                |
 | - Cash Sales                             | 4000                 | 120,000        |
-| - Cash Received from Loans               | 2200/2210/2500/2220  | 30,000         |
+| - Cash Received from Loans               | 2200/2210            | 30,000         |
 | Less: Cash Payments                      |                      |                |
 | - Cash Expenses (Operational)            | 6000–6430 (as needed)| (45,000)       |
-| - Cash Loan Repayment                    | 2200/2210/2500/2220  | (20,000)       |
+| - Cash Loan Repayment                    | 2200/2210/2220       | (20,000)       |
 | Net Cash Income                          |                      | 85,000         |
 | Less: Dividends Paid                     | 3200                 | (10,000)       |
 | Less: Owner Withdrawal                   | 3200                 | (15,000)       |

@@ -61,74 +61,104 @@ Database structure for MongoDB's **budgeting module** and **inventory management
 
 ---
 
-### **2. Inventory Management Module - MongoDB Structure**
 
-#### Collections:
 
-**a. Products**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 1. **`products` Collection**
+
+This collection stores details about individual products.
+
 ```json
 {
-  "_id": ObjectId("..."),
-  "name": "Laptop",                   // Name of the product
-  "description": "Dell XPS 13",        // Product description
-  "category": "Electronics",           // Category of the product (e.g., Electronics, Furniture)
-  "price": 1200.00,                    // Price per unit
-  "sku": "DLXPS13",                    // Unique product identifier (Stock Keeping Unit)
-  "supplier_id": ObjectId("..."),      // Link to Supplier collection
-  "created_at": ISODate("2025-01-01T10:00:00Z"),  // Timestamp when the product was added
-  "updated_at": ISODate("2025-02-15T14:00:00Z")   // Timestamp for last update
+  "_id": ObjectId("605c72ef1532073e7f98b7b4"),
+  "product_name": "Wireless Mouse",
+  "sku": "WM12345",
+  "category": "Electronics",
+  "description": "A high-quality wireless mouse",
+  "quantity": 150,
+  "price": 25.99,
+  "supplier_id": ObjectId("605c72ef1532073e7f98b7b3"),  // Reference to supplier
+  "location": "Aisle 3, Shelf B",
+  "received_date": ISODate("2025-01-15T00:00:00Z"),
+  "last_updated": ISODate("2025-03-10T00:00:00Z"),
+  "status": "in_stock",  // Could be 'in_stock', 'out_of_stock', 'discontinued'
+  "tags": ["wireless", "mouse", "electronics"],  // Optional: for product filtering
+  "image_url": "http://example.com/images/wireless_mouse.jpg"  // Optional: Image URL
 }
 ```
 
-**b. Inventory_Levels**
+### 2. **`suppliers` Collection**
+
+This collection stores information about suppliers.
+
 ```json
 {
-  "_id": ObjectId("..."),
-  "product_id": ObjectId("..."),       // Link to Products collection
-  "location_id": ObjectId("..."),      // Link to Locations collection (optional if multiple warehouses)
-  "quantity": 50,                      // Current stock level
-  "minimum_stock": 10,                 // Minimum stock level before reorder
-  "maximum_stock": 100,                // Maximum stock level
-  "created_at": ISODate("2025-01-01T10:00:00Z"),  // Timestamp when inventory was updated
-  "updated_at": ISODate("2025-02-15T14:00:00Z")   // Timestamp for last update
+  "_id": ObjectId("605c72ef1532073e7f98b7b3"),
+  "name": "Tech Supplies Co.",
+  "contact_name": "John Doe",
+  "contact_email": "contact@techsupplies.com",
+  "contact_phone": "123-456-7890",
+  "address": "123 Tech Lane, Silicon Valley, CA",
+  "status": "active",  // Could be 'active', 'inactive'
+  "payment_terms": "Net 30"
 }
 ```
 
-**c. Transactions (Inventory Movement)**
+
+
+### 2. **`inventory_transactions` Collection**
+
+This collection stores all inventory transactions (e.g., purchases, sales, adjustments).
+
 ```json
 {
-  "_id": ObjectId("..."),
-  "product_id": ObjectId("..."),       // Link to Products collection
-  "transaction_type": "Sale",          // Type of movement (Sale, Purchase, Transfer)
-  "quantity": 5,                       // Quantity of items moved
-  "transaction_date": ISODate("2025-02-10T14:00:00Z"), // Date of transaction
-  "location_id": ObjectId("..."),      // Location or warehouse
-  "created_at": ISODate("2025-02-10T15:00:00Z")   // Timestamp when transaction was logged
+  "_id": ObjectId("605c72ef1532073e7f98b7b5"),
+  "product_id": ObjectId("605c72ef1532073e7f98b7b4"),  // Reference to product
+  "transaction_type": "purchase",  // Could be 'purchase', 'sale', 'adjustment'
+  "quantity": 100,
+  "unit_price": 25.99,  // Price per unit during this transaction
+  "total_value": 2599,  // Quantity * unit_price
+  "transaction_date": ISODate("2025-03-10T00:00:00Z"),
+  "reference_number": "PO12345",  // Could be purchase order number, sales invoice, etc.
+  "transaction_status": "completed",  // Could be 'pending', 'completed', 'cancelled'
+  "supplier_id": ObjectId("605c72ef1532073e7f98b7b3")  // Optional: for purchase transactions
 }
 ```
 
-**d. Suppliers**
+### 3. **`inventory_adjustments` Collection**
+
+This collection is used for adjustments (e.g., stock corrections, damaged goods, returns).
+
 ```json
 {
-  "_id": ObjectId("..."),
-  "name": "Tech Supplies Inc.",         // Supplier name
-  "contact_name": "Jane Doe",           // Contact person at the supplier
-  "contact_email": "jane@techsupplies.com",  // Contact email
-  "contact_phone": "+1234567890",      // Contact phone number
-  "address": "123 Tech St, City, Country", // Supplier address
-  "created_at": ISODate("2025-01-01T10:00:00Z")  // Timestamp for when the supplier was added
+  "_id": ObjectId("605c72ef1532073e7f98b7b6"),
+  "product_id": ObjectId("605c72ef1532073e7f98b7b4"),  // Reference to product
+  "adjustment_type": "damage",  // Could be 'damage', 'theft', 'correction', etc.
+  "quantity_adjusted": -10,  // Positive or negative based on the adjustment
+  "reason": "Product damaged during shipment",
+  "adjustment_date": ISODate("2025-03-11T00:00:00Z"),
+  "user_id": ObjectId("605c72ef1532073e7f98b7b7"),  // Reference to the user making the adjustment
+  "notes": "Adjusted stock due to damages"
 }
 ```
-
-**e. Locations (optional)**
-```json
-{
-  "_id": ObjectId("..."),
-  "name": "Warehouse A",               // Location name (e.g., Warehouse A, Store 1)
-  "address": "456 Warehouse Ave",      // Physical location address
-  "created_at": ISODate("2025-01-01T10:00:00Z")  // Timestamp for when the location was created
-}
-```
-
----
 

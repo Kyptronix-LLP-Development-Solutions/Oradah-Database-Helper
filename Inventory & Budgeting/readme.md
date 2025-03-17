@@ -68,7 +68,7 @@ This collection stores information about suppliers.
 
 
 
-### 2. **`inventory_transactions` Collection**
+### 3. **`inventory_transactions` Collection**
 
 This collection stores all inventory transactions (e.g., purchases, sales, adjustments).
 
@@ -87,7 +87,7 @@ This collection stores all inventory transactions (e.g., purchases, sales, adjus
 }
 ```
 
-### 3. **`inventory_adjustments` Collection**
+### 4. **`inventory_adjustments` Collection**
 
 This collection is used for adjustments (e.g., stock corrections, damaged goods, returns).
 

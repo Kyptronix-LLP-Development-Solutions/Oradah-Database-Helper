@@ -95,7 +95,7 @@ This collection stores details about individual products.
   "sku": "WM12345",
   "category": "Electronics",
   "description": "A high-quality wireless mouse",
-  "quantity": 150,
+  "quantity": 150, // Will Update Everytime based on the inventory transaction
   "price": 25.99,
   "supplier_id": ObjectId("605c72ef1532073e7f98b7b3"),  // Reference to supplier
   "location": "Aisle 3, Shelf B",
